@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma de Doação de Alimentos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cadastro.html">Cadastro</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1> Plataforma de Doação de Alimentos </h1>
+        <p>Conectando doadores e quem precisa de forma rápida e eficiente.</p>
+    </header>
+    
+    <section class="about">
+        <h2>Como Funciona?</h2>
+        <p>Nosso site permite que restaurantes e mercados cadastrem alimentos próximos da validade para doação. Beneficiários podem visualizar e reservar alimentos facilmente.</p>
+        <div class="image-container">
+            <img src="img/doacao1.jpg" alt="vou adicionar uma imagem ainda">
+            <img src="img/doacao2.jpg" alt="vou adicionar uma imagem ainda">
+        </div>
+    </section>
+    
+    <section class="features">
+        <h2>Recursos da Plataforma</h2>
+        <ul>
+            <li>📌 Cadastro de doadores e beneficiários</li>
+            <li>🔎 Busca e filtragem de alimentos</li>
+            <li>📅 Sistema de reserva de alimentos</li>
+            <li>📢 Notificações de novas doações</li>
+            <li>📊 Dashboard para acompanhamento</li>
+        </ul>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 Plataforma de Doação de Alimentos. Todos os direitos reservados.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
