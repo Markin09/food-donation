@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doações</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cadastro.html">Cadastro</a></li>
+            <li><a href="login.html">Login</a></li>
+            <li><a href="doacoes.html">Doações</a></li>
+        </ul>
+    </nav>
+
+    <div class="doacoes-container">
+        <h2>Faça sua Doação</h2>
+
+        <p>Com sua contribuição, podemos ajudar muitas pessoas que precisam de alimentos e recursos. Se você tem um restaurante, mercado, ou deseja fazer uma doação como pessoa, esse é o lugar certo!</p>
+        
+        <h3>Informações sobre a doação</h3>
+        <p>As doações são direcionadas para pessoas em situação de vulnerabilidade e comunidades que precisam de apoio. Sua generosidade fará a diferença!</p>
+        
+        <h3>Formulário de Doação</h3>
+        <form id="donation-form">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required placeholder="Seu nome completo">
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required placeholder="Seu e-mail">
+
+            <label for="nome">Nome do produto:</label>
+            <input type="text" id="nome" name="nome" required placeholder="Digite o nome do produto">
+
+            <label for="tipo-doacao">Categoria do Produto:</label>
+            <select id="tipo-doacao" name="tipo-doacao" required>
+                <option value="" disabled selected>Escolha a categoria do seu produto</option>
+                <option value="alimentos">Alimentos</option>
+                <option value="bebidas alcoólicas">Bebidas alcoólicas</option>
+                <option value="bebidas não alcoólicas">Bebidas não alcoólicas</option>
+                <option value="doces">Doces</option>
+                <option value="higiene & Perfumaria">Higiene & Perfumaria</option>
+                <option value="limpeza">Limpeza</option>
+                <option value="outros">Outros</option>
+            </select>
+
+            <label for="descricao">Descrição da Doação:</label>
+            <textarea id="descricao" name="descricao" placeholder="Descreva o que você está doando (opcional)"></textarea>
+
+        
+            <button type="submit">Concluir Doação</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Plataforma de Doações. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
