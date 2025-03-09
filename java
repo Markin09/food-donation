@@ -1,20 +1,36 @@
 // Validação de Login
 document.getElementById('login-form')?.addEventListener('submit', function (e) {
-    e.preventDefault();
+    e.preventDefault(); // Impede que o formulário seja enviado
 
     // Obtendo os valores dos campos de email e senha
     const email = document.getElementById('email').value;
     const senha = document.getElementById('senha').value;
 
-    // Verificação simples (Você pode melhorar com expressões regulares ou lógica mais avançada)
+    // Verificação de campos vazios
     if (email === "" || senha === "") {
         alert("Por favor, preencha todos os campos.");
-    } else {
-        alert("Login realizado com sucesso!");
-        // Aqui você pode redirecionar o usuário para a página principal ou algo similar
-        // window.location.href = 'pagina-principal.html';
+        return; // Impede a execução do código abaixo
     }
+
+    // Verificação se o e-mail termina com '@gmail.com'
+    if (!email.endsWith('@gmail.com')) {
+        alert('Erro: O e-mail deve ser um endereço Gmail.');
+        return; // Impede a execução do código abaixo
+    }
+
+    // Lógica para validar a senha (exemplo simples)
+    if (senha.length < 6) {
+        alert('Erro: A senha deve ter pelo menos 6 caracteres.');
+        return; // Impede a execução do código abaixo
+    }
+
+    // Se todos os dados estiverem corretos
+    alert('Login realizado com sucesso!');
+
+    // Redirecionar para a página de doações após login bem-sucedido
+    window.location.href = 'doacoes.html'; // Isso redireciona para a página de doações
 });
+
 
 // Exibição de tipo de doador/cliente no formulário de doação
 document.getElementById('tipo-doacao')?.addEventListener('change', function () {
